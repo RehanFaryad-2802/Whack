@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.f {
+  display: flex;
+}
+
+.fw {
+  flex-wrap: wrap;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: end;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-around;
+}
+
+.aic {
+  align-items: center;
+}
+.dfa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.GameArea {
+  width: 550px;
+  margin: 40px auto 0 auto;
+}
+.gamename2{
+  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+.target {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border-radius: 7px;
+  user-select: none;
+}
+.target span {
+  font-size: 40px;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1150px;
+  column-gap: 40px;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 120px;
+  transition: 0.1s transform;
+  background-image: linear-gradient(red, #954848);
+}
+.btn:hover {
+  transform: scale(1.06);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.target:disabled {
+  background-color: black;
+}
+
+.account {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.account button {
+  width: 200px;
+  cursor: pointer;
+  padding: 9px 18px;
+  margin: 5px;
+  transition: 0.1s scale;
+  font-size: 22px;
+  font-weight: bold;
+}
+.account button:hover {
+  scale: 1.1;
+}
+.account button:active {
+  scale: 1;
+}
+h1.gamename,
+.login1,.signup1 {
+  font-size: 96px;
+  text-align: center;
+  user-select: none;
+  margin-top: 3rem;
+}
+.account input{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+h1.gamename {
+  animation: zoom 1s infinite ease-in-out;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.userInfo{
+    column-gap: 20px;
+    padding: 2rem;
+    background-color: #dfdfdf;
+}
+.userInfo img{
+    border-radius: 50%;
+}
+.userNameHere{
+    font-size: 20px;
+}
+.historyHead{
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+}
+.History .no{
+  flex: 0 0 5%;
+}
+.History ,.Progresse,.scoreMade,.Timer{
+  flex: 0 0 30%;
+}
+.History{
+  margin: 4px;
+  font-size: 24px;
+  padding: 10px;
+}
+.History:nth-child(even){
+  background-color: red;
+}
+.History:nth-child(odd){
+  background-color: #fe7474;
+}
+.headingHis{
+  background-color: #520000 !important;
+  border: 2px solid white;
+}
+.headingHis *{
+  color: #ffffff !important;
+}
+.container1{
+  width: 80%;
+  margin: 4px auto;
+}
+.accountBody{
+  background-color: black;
+}
+.Clean{
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+}
+.setting{
+  font-size: 80px;
+  text-align: center;
+}
+.settings{
+  width: 40%;
+  margin: 20px auto;
+}
+.timerChangeer *{
+  font-size: 24px;
+}
+.back img{
+  width: 30px;
+  cursor: pointer;
+}
+.innerSidebar{
+  width: 80%;
+}
+.side_bar{
+  display: flex;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  background-color: red;
+  top: 0;
+  right: 0;
+  justify-content: end;
+}
+.innerSidebar .container button,
+.innerSidebar .container a{
+  width: 100%;
+  border-radius: 0;
+  background-image: linear-gradient(red,red);
+}
+.innerSidebar .container{
+  padding: 0;
+}
+.back{
+  position: fixed;
+  top: 13px;
+  left: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .GameArea{
+    width: 290px;
+  }
+  .target{
+    width: 50px;
+    height: 50px;
+  }
+  .optionBar .container{
+    flex-direction: column;
+  }
+  .container{
+    padding: 0;
+  }
+  .container :where(a, button) {
+    width: 100%;
+    border-radius: 0;
+  }
+  .target span{
+    font-size: 25px;
+  }
+}
